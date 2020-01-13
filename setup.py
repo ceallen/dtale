@@ -62,6 +62,7 @@ setup(
         "lz4<=2.2.1; python_version < '3.0'",
         "lz4; python_version > '3.0'",
         "arctic",
+        "dash",
         "Flask",
         "Flask-Compress",
         "future",
@@ -72,7 +73,8 @@ setup(
         "six"
     ],
     extras_require={
-        'flasgger': ["jsonschema<3.0.0", "flasgger==0.9.3"]
+        'flasgger': ["jsonschema<3.0.0", "flasgger==0.9.3"],
+        'arctic': ['arctic'],
     },
     tests_require=[
         "ipython",
