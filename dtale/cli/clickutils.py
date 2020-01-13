@@ -91,7 +91,7 @@ def get_loader_options(key, options):
         segs = option.split('_')
         if len(segs) == 1:
             return ''
-        return segs[-1]
+        return '_'.join(segs[1:])
     return dict(((_build_key(k), v) for k, v in options.items() if k.startswith(key)))
 
 
